@@ -44,7 +44,7 @@
 			</form>
 		</div>
 		<form method="GET" action=".">
-			<button type="submit" class="logotech" name="return" value="TechSwag"><span style="color: white;">FiMi</span><span style="color: #646a61">Zearl</span></button>
+			<button type="submit" class="logotech" name="return" value="TechSwag"><span style="color: white;">FiMi</span><span style="color: #da975c">Zearl</span></button>
 		</form>
 	</div>
 
@@ -52,7 +52,7 @@
 		<form method="GET" action=".">
 			<br/>
 			<input type="submit" class="catlist" name="cat" value="Home" />
-			<a href="populate/CV.pdf" class="catlist hov" name="cat" value="Info" style="text-decoration: none; color: black; padding: 4% 100% 4% 10%;">Info</a>
+			<a href="populate/CurriculumV.pdf" class="catlist hov" name="cat" value="Info" style="text-decoration: none; color: black; padding: 4% 42% 4% 10%;">About us</a>
 			<?php
 				if (isset($_SESSION['logged_in_user']))
 					$query = 'SELECT * FROM admin WHERE login="'.$_SESSION['logged_in_user'].'"';

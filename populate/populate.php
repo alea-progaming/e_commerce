@@ -26,7 +26,7 @@ function populate_allitms()
 	<div class="itmlist">
 		<div class="itmname">'.$cat[1].'</div>
 		<div class="itmimg">
-			<img src="./imgs/'.$cat[1].'.jpg">
+			<img src="./imgs/'.$cat[1].'.png">
 		</div>
 		<div class="itmmidcontainer">
 			<div class="itmstock">Stock: '.$cat[2].'</div>
@@ -54,7 +54,7 @@ function populate_uncategorized()
 	<div class="itmlist">
 		<div class="itmname">'.$cat[1].'</div>
 		<div class="itmimg">
-			<img src="./imgs/'.$cat[1].'.jpg">
+			<img src="./imgs/'.$cat[1].'.png">
 		</div>
 		<div class="itmmidcontainer">
 			<div class="itmstock">Stock: '.$cat[2].'</div>
@@ -89,7 +89,7 @@ function populate_category()
 	<div class="itmlist">
 		<div class="itmname">'.$cat[1].'</div>
 		<div class="itmimg">
-			<img src="./imgs/'.$cat[1].'.jpg">
+			<img src="./imgs/'.$cat[1].'.png">
 		</div>
 		<div class="itmmidcontainer">
 			<div class="itmstock">Stock: '.$cat[2].'</div>
@@ -116,7 +116,7 @@ function populate_home()
 	<div class="itmlist">
 		<div class="itmname">'.$cat[1].'</div>
 		<div class="itmimg">
-			<img src="./imgs/'.$cat[1].'.jpg">
+			<img src="./imgs/'.$cat[1].'.png">
 		</div>
 		<div class="itmmidcontainer">
 			<div class="itmstock">Stock: '.$cat[2].'</div>
@@ -151,7 +151,7 @@ function populate_search()
 			<div class="itmlist">
 				<div class="itmname">'.$cat[1].'</div>
 				<div class="itmimg">
-					<img src="./imgs/'.$cat[1].'.jpg">
+					<img src="./imgs/'.$cat[1].'.png">
 				</div>
 				<div class="itmmidcontainer">
 					<div class="itmstock">Stock: '.$cat[2].'</div>
@@ -169,7 +169,7 @@ function populate_search()
 				<div class="itmlist">
 					<div class="itmname">'.$cat[1].'</div>
 					<div class="itmimg">
-						<img src="./imgs/'.$cat[1].'.jpg">
+						<img src="./imgs/'.$cat[1].'.png">
 					</div>
 					<div class="itmmidcontainer">
 						<div class="itmstock">Stock: '.$cat[2].'</div>
@@ -249,7 +249,7 @@ function populate_addeditem()
 	<div class="itmlist" style="position: absolute; top: 25%; left:30%;">
 		<div class="itmname">'.$cat[1].'</div>
 		<div class="itmimg">
-			<img src="./imgs/'.$cat[1].'.jpg">
+			<img src="./imgs/'.$cat[1].'.png">
 		</div>
 		<div class="itmmidcontainer">
 			<div class="itmstock">Stock: '.$cat[2].'</div>

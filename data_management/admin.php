@@ -4,7 +4,7 @@ function addusr()
 {
 	global $link;
 
-	if ($_POST['login'] != '' && $_POST['name'] != ''&& $_POST['prename'] != ''
+	if ($_POST['login'] != '' && $_POST['name'] != ''&& $_POST['surname'] != ''
 		&& $_POST['email'] != '' && $_POST['passwd'] != '')
 	{
 		$query = 'SELECT * FROM usr WHERE login="'.$_POST['login'].'"';
@@ -16,7 +16,7 @@ function addusr()
 		}
 		else
 		{
-			$query = 'INSERT INTO `usr` (`login`, `name`, `prename`, `email`, `passwd`) VALUES ("'.$_POST['login'].'", "'.$_POST['name'].'", "'.$_POST['prename'].'", "'.$_POST['email'].'", "'.hash('SHA1', $_POST['passwd']).'")';
+			$query = 'INSERT INTO `usr` (`login`, `name`, `surname`, `email`, `passwd`) VALUES ("'.$_POST['login'].'", "'.$_POST['name'].'", "'.$_POST['surname'].'", "'.$_POST['email'].'", "'.hash('SHA1', $_POST['passwd']).'")';
 			mysqli_query($link, $query);
 			echo "<script type='text/javascript'>alert('Account ".$_POST['login']." successfully created!')</script>";
 			include ('./htmls/adminmenu.html');
@@ -50,10 +50,10 @@ function mdfusr()
 				mysqli_query($link, 'UPDATE `usr` SET name="'.$_POST['name'].'" WHERE login="'.$_POST['login'].'"');
 				$modified .= "name ";
 			}
-			if ($_POST['prename'] != '')
+			if ($_POST['surname'] != '')
 			{
-				mysqli_query($link, 'UPDATE `usr` SET prename="'.$_POST['prename'].'" WHERE login="'.$_POST['login'].'"');
-				$modified .= "prename ";
+				mysqli_query($link, 'UPDATE `usr` SET surname="'.$_POST['surname'].'" WHERE login="'.$_POST['login'].'"');
+				$modified .= "surname ";
 			}
 			if ($_POST['email'] != '')
 			{

@@ -49,8 +49,8 @@ function check_potential_error()
 		echo "<script type='text/javascript'>alert('No login submitted!')</script>";
 	else if (!isset($_POST['name']))
 		echo "<script type='text/javascript'>alert('No name submitted!')</script>";
-	else if (!isset($_POST['prename']))
-		echo "<script type='text/javascript'>alert('No prename submitted!')</script>";
+	else if (!isset($_POST['surname']))
+		echo "<script type='text/javascript'>alert('No surname submitted!')</script>";
 	else
 	{
 		$result = mysqli_query($link, 'SELECT * FROM `usr` WHERE login="'.$_POST['login'].'"');
@@ -67,7 +67,7 @@ function create_account()
 
 	if (check_potential_error())
 	{
-		$query = 'INSERT INTO `usr` (`login`, `name`, `prename`, `email`, `passwd`) VALUES ("'.$_POST['login'].'", "'.$_POST['name'].'", "'.$_POST['prename'].'", "'.$_POST['email'].'", "'.hash('SHA1', $_POST['passwd']).'")';
+		$query = 'INSERT INTO `usr` (`login`, `name`, `surname`, `email`, `passwd`) VALUES ("'.$_POST['login'].'", "'.$_POST['name'].'", "'.$_POST['surname'].'", "'.$_POST['email'].'", "'.hash('SHA1', $_POST['passwd']).'")';
 		mysqli_query($link, $query);
 		unset($_POST['create_user']);
 		echo "<script type='text/javascript'>alert('Account successfully created!')</script>";

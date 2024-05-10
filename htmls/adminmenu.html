@@ -2,7 +2,6 @@
 Admin Menu:
 </div>
 
-<form class="adminmenu" method="POST" action=".">
 	<div class="adminrow">
 		<div class="admincol" style="border:none">-</div>
 		<div class="admincol">Add</div>
@@ -19,9 +18,16 @@ Admin Menu:
 	<hr style="margin: 0;"/>
 	<div class="adminrow">
 		<div class="admincol">Item</div>
-		<input type="submit" class="adminform" name="adminquery" value="additm">
-		<input type="submit" class="adminform" name="adminquery" value="mdfitm">
-		<input type="submit" class="adminform" name="adminquery" value="delitm">
+		<form class="adminmenu" method="POST" action="additm.html">
+			<input type="submit" class="adminform" name="adminquery" value="additm">
+		</form>
+		<form class="adminmenu" method="POST" action="mdfitm.html">
+			<input type="submit" class="adminform" 
+			name="adminquery" value="mdfitm">
+		</form>	
+		<form class="adminmenu" method="POST" action="delitm.html">
+			<input type="submit" class="adminform" name="adminquery" value="delitm">
+		</form>
 	</div>
 	<hr style="margin: 0;"/>
 	<div class="adminrow">
@@ -30,4 +36,3 @@ Admin Menu:
 		<input type="submit" class="adminform" name="adminquery" value="mdfcat">
 		<input type="submit" class="adminform" name="adminquery" value="delcat">
 	</div>
-</form>

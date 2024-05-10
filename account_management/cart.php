@@ -75,7 +75,7 @@ function show_cart()
 			<div class="cartitm" style="margin-bottom: 3%;">
 				<div class="cartcol" style="border-right-style: none; margin-left: 3%;">Name</div>
 				<div class="cartcol" style="border-right-style: none">Amount</div>
-				<div class="cartcol">Price (RON)</div>
+				<div class="cartcol">Price (PHP)</div>
 			</div>
 			';
 		$total = 0;
@@ -105,6 +105,7 @@ function show_cart()
 	{
 		$arr = explode(';', $_SESSION['cart']);
 		echo '<div class="itmtitle" style="margin-bottom: 3%;">Temporary cart: (log in to add to account'."'".'s cart)</div>';
+		global $total;
 
 		foreach($arr as $itm_id)
 		{

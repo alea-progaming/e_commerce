@@ -30,7 +30,7 @@ function display_logout()
 
 	echo '
 	<div class="login">
-	Welcome '.$arr['name']." ".$arr['prename'].'!
+	Welcome '.$arr['name']." ".$arr['surname'].'!
 	</div>
 	<div class="login">
 	What would you like to buy today?
